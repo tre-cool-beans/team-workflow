@@ -20,7 +20,10 @@ One way to handle this situation is to delete the feature branch off of your
 remote repo. That takes a few steps though, and there is an easier way to do it.
 Simply type the following command in your feature branch after rebasing it onto
 development:
-`git push --force-with-lease origin <branch-name>`
 
+    git push --force-with-lease [origin <branch-name>]
+
+Just for clarity, the square brackets around the end of the command mean that those
+commands might be optional, thus making it so you only have to type the first part.
 It is good form to try to avoid --force commands as much as possible but in this
 instance that would be a correct use of one.
